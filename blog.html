@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveler Experiences in the Seven Sisters</title>
+  <link rel="stylesheet" href="blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+  <section class="blog-section">
+    <h2>Traveler Stories</h2>
+
+    <div class="blog-grid">
+      
+      <div class="blog-card fade-in">
+        <div class="blog-content">
+          <h3>A Journey Through the Seven Sisters</h3>
+          <p>"We set off with no expectations, but every turn led to breathtaking landscapes, warm local hospitality, and unforgettable moments." — Team Explorer</p>
+        </div>
+      </div>
+
+      <div class="blog-card fade-in">
+        <div class="blog-content">
+          <h3>Meeting the Heart of Northeast India</h3>
+          <p>"From sharing meals with villagers to celebrating local festivals, every interaction deepened our connection with this stunning region." — Priya & Rohan</p>
+        </div>
+      </div>
+
+      <div class="blog-card fade-in">
+        <div class="blog-content">
+          <h3>Finding Serenity in the Wilderness</h3>
+          <p>"The untouched beauty of the valleys and waterfalls made us realize how magical nature truly is in this part of India." — Aditya</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Travel Experience. All rights reserved.</p>
+      <p>Crafted with love for travelers 🌿</p>
+      <div class="footer-nav">
+        <a href="../index.html">Home</a>
+        <a href="contactus.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Fade Animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".blog-card");
+
+        const fadeInOnScroll = () => {
+            cards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (cardPosition < windowHeight * 0.9) {
+                    card.style.opacity = "1";
+                    card.style.transition = "opacity 1.5s ease-in, transform 0.5s ease";
+                    card.style.transform = "translateY(0)";
+                }
+            });
+        };
+
+        window.addEventListener("scroll", fadeInOnScroll);
+        fadeInOnScroll();
+    });
+  </script>
+
+</body>
+</html>
