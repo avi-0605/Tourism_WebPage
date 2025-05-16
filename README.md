@@ -88,7 +88,7 @@ tourism-website/
 
 ## 👩‍💻 Author
 
-**Aavani Rajesh Perumbessi**  and **Prity Prajapati**
+**Aavani Rajesh Perumbessi**
 _Passionate about front-end design, culture, and regional storytelling through web technologies._
 
 ---
